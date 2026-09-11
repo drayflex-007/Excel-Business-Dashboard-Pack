@@ -45,7 +45,6 @@ button {
     margin: 0 auto;
 }
 
-
 /* =========================
    HEADER
 ========================= */
@@ -140,7 +139,6 @@ nav .nav-cta:hover {
     cursor: pointer;
 }
 
-
 /* =========================
    BUTTONS
 ========================= */
@@ -185,7 +183,6 @@ nav .nav-cta:hover {
     min-height: 56px;
     padding: 0 28px;
 }
-
 
 /* =========================
    HERO
@@ -249,7 +246,6 @@ nav .nav-cta:hover {
     color: #b8bdc5;
     font-size: 12px;
 }
-
 
 /* =========================
    DASHBOARD MOCKUP
@@ -373,4 +369,681 @@ nav .nav-cta:hover {
     margin-top: 7px;
 }
 
-.dash
+.dash-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.dash-bottom > div {
+    background: #0c0f13;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.dash-bottom small {
+    display: block;
+    color: var(--muted);
+    font-size: 9px;
+}
+
+.dash-bottom strong {
+    display: block;
+    color: var(--white);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+/* =========================
+   PROOF STRIP
+========================= */
+
+.proof-strip {
+    background: #0d1014;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.proof-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.proof-grid > div {
+    padding: 28px 20px;
+    text-align: center;
+    border-right: 1px solid var(--line);
+}
+
+.proof-grid > div:last-child {
+    border-right: none;
+}
+
+.proof-grid strong {
+    display: block;
+    color: var(--gold);
+    font-size: 27px;
+}
+
+.proof-grid span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 105px 0;
+    background: var(--bg);
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    color: var(--white);
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.section-heading.left {
+    margin-left: 0;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.feature {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 30px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    border-color: rgba(216, 168, 62, 0.35);
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: rgba(216, 168, 62, 0.12);
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.feature h3 {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================
+   PROBLEM
+========================= */
+
+.dark-section {
+    background: #0d1014;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.split h2 {
+    color: var(--white);
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+}
+
+.split p {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.accent-text {
+    color: var(--gold-light) !important;
+    font-weight: 700;
+}
+
+.check-list {
+    display: grid;
+    gap: 12px;
+}
+
+.check-list div {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 17px 20px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* =========================
+   INCLUDED
+========================= */
+
+.included-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 18px;
+}
+
+.included-main,
+.bonus-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px;
+}
+
+.included-main .number,
+.bonus-card .number {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.included-main h3,
+.bonus-card h3 {
+    color: var(--white);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.included-main p,
+.bonus-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.included-main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.included-main li {
+    color: var(--text);
+    background: #0e1115;
+    border: 1px solid var(--line);
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.included-side {
+    display: grid;
+    gap: 18px;
+}
+
+.tag {
+    display: inline-block;
+    color: var(--gold);
+    border: 1px solid rgba(216, 168, 62, 0.3);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.light-section {
+    background: #f5f3ee;
+    color: #16181b;
+}
+
+.light-section .section-heading h2 {
+    color: #111318;
+}
+
+.light-section .eyebrow {
+    color: #9a741f;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.step {
+    background: #ffffff;
+    border: 1px solid #dedbd2;
+    border-radius: var(--radius);
+    padding: 28px;
+}
+
+.step b {
+    color: #9a741f;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.step h3 {
+    color: #15171b;
+    font-size: 20px;
+    margin: 18px 0 8px;
+}
+
+.step p {
+    color: #656970;
+    font-size: 14px;
+}
+
+/* =========================
+   AUDIENCE
+========================= */
+
+.audience {
+    background: var(--bg-soft);
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.audience-grid div {
+    border: 1px solid var(--line);
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    color: var(--text);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing-section {
+    padding: 105px 0;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(216, 168, 62, 0.14), transparent 40%),
+        #080a0d;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 50px;
+    background: linear-gradient(145deg, #171b21, #0f1216);
+    border: 1px solid rgba(216, 168, 62, 0.28);
+    border-radius: 24px;
+    padding: 55px;
+}
+
+.price-copy h2 {
+    color: var(--white);
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.08;
+    margin-bottom: 15px;
+}
+
+.price-copy > p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.price span {
+    color: var(--gold-light);
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.price del {
+    color: #747b84;
+    font-size: 20px;
+}
+
+.price-copy .small {
+    color: #808791;
+    font-size: 12px;
+}
+
+.price-list {
+    border-left: 1px solid var(--line);
+    padding-left: 40px;
+}
+
+.price-list h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.price-list p {
+    color: var(--text);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+}
+
+.secure {
+    color: #858c95;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    background: #f5f3ee;
+}
+
+.faq-section .section-heading h2 {
+    color: #111318;
+}
+
+.faq-section .eyebrow {
+    color: #9a741f;
+}
+
+.faq {
+    max-width: 850px;
+}
+
+.faq-q {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d8d5cc;
+    background: transparent;
+    color: #17191d;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.faq-q span {
+    color: #9a741f;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq-a {
+    max-height: 0;
+    overflow: hidden;
+    color: #656970;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-q.active + .faq-a {
+    max-height: 180px;
+    padding: 0 0 20px;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta {
+    text-align: center;
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at center, rgba(216, 168, 62, 0.14), transparent 42%),
+        var(--bg);
+}
+
+.final-cta h2 {
+    max-width: 800px;
+    margin: 0 auto 18px;
+    color: var(--white);
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.final-cta p {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #050608;
+    border-top: 1px solid var(--line);
+    padding: 30px 0;
+}
+
+.footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-wrap p,
+.footer-wrap > span {
+    color: #777e88;
+    font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 75px 0 65px;
+    }
+
+    .hero-grid,
+    .split,
+    .included-grid,
+    .pricing-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-grid {
+        gap: 45px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-list {
+        border-left: none;
+        border-top: 1px solid var(--line);
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    nav {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #080a0d;
+        border-bottom: 1px solid var(--line);
+        padding: 10px 4%;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    nav .nav-cta {
+        text-align: center;
+        margin: 10px 0;
+        border: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .proof-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proof-grid > div:nth-child(2) {
+        border-right: none;
+    }
+
+    .proof-grid > div:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .footer-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .container {
+        width: min(92%, 100%);
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .dashboard-card {
+        padding: 15px;
+    }
+
+    .bars {
+        gap: 4px;
+    }
+
+    .feature-grid,
+    .steps,
+    .audience-grid,
+    .included-main ul {
+        grid-template-columns: 1fr;
+    }
+
+    .section,
+    .pricing-section {
+        padding: 75px 0;
+    }
+
+    .pricing-card {
+        padding: 30px 22px;
+    }
+
+    .price span {
+        font-size: 38px;
+    }
+
+    .proof-grid strong {
+        font-size: 23px;
+    }
+
+    .proof-grid span {
+        font-size: 10px;
+    }
+
+    .dash-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-card {
+        transform: none;
+    }
+}
