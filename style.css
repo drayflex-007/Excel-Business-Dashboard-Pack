@@ -73,13 +73,14 @@ button {
     flex-shrink: 0;
 }
 
-.brand-mark {
+.brand-logo {
     width: 150px;
     height: 50px;
     display: block;
     object-fit: contain;
     object-position: left center;
     flex-shrink: 0;
+
 }
 
 .brand strong {
