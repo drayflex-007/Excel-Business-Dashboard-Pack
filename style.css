@@ -1059,3 +1059,21 @@ footer {
     }
 }
 /* GitHub Pages deployment refresh */
+
+/* =========================
+   NEXORA LOGO RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .brand-mark {
+        width: 125px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-mark {
+        width: 110px;
+        height: 40px;
+    }
+}
