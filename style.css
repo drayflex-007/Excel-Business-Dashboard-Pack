@@ -100,6 +100,20 @@ button {
     margin-top: -2px;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    display: block;
+    width: 145px;
+    height: auto;
+    max-height: 48px;
+    object-fit: contain;
+}
+
 nav {
     display: flex;
     align-items: center;
